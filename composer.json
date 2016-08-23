@@ -1,14 +1,11 @@
 {
-  "name": "markenwerk/markdom",
+  "name": "markdom/model-interface",
   "type": "library",
-  "description": "Interfaces, domain model, parser and handler for Markdom documents",
+  "description": "Markdom domain model interfaces written in PHP",
   "keywords": [
     "Markdom",
-    "Markdown",
-    "HTML",
-    "XHTML",
-    "JSON",
-    "XML"
+    "Model",
+    "Interface"
   ],
   "homepage": "http://markenwerk.net/",
   "license": "MIT",
@@ -21,20 +18,10 @@
   ],
   "autoload": {
     "psr-4": {
-      "Markenwerk\\Markdom\\": "src"
+      "Markdom\\ModelInterface": "src"
     }
   },
   "require": {
-    "php": ">=5.4",
-    "league/commonmark": "^0.13",
-    "mustangostang/spyc": "~0.5",
-    "markenwerk/common-exceptions": "~3.0",
-    "markenwerk/stack-util": "~1.0",
-    "markenwerk/string-builder": "~1.0",
-    "markenwerk/json-pretty-printer": "~1.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit": ">=4.8.26",
-    "codeclimate/php-test-reporter": "dev-master"
+    "php": ">=5.3"
   }
 }

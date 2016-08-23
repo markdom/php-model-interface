@@ -20,7 +20,7 @@ interface BlockParentInterface
 	public function getDocument();
 
 	/**
-	 * @return BlockCollection
+	 * @return BlockSequenceInterface
 	 */
 	public function getBlocks();
 

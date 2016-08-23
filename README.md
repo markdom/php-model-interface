@@ -1,5 +1,3 @@
-# PHP Markdom
+# Markdom PHP Model Interface
 
-TODO: Add readme. 
-
-1\. sakjdfh
+Domain model interfaces written in PHP.

@@ -2,8 +2,6 @@
 
 namespace Markdom\ModelInterface;
 
-use Markdom\ModelInterface\Common\NodeInterface;
-
 /**
  * Interface DocumentInterface
  *
@@ -23,11 +21,6 @@ interface DocumentInterface
 	 * @return string
 	 */
 	public function getNodeType();
-
-	/**
-	 * @return NodeInterface
-	 */
-	public function getParent();
 
 	/**
 	 * @param MarkdomHandlerInterface $markdomHandler

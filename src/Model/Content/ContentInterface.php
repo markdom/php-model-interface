@@ -3,6 +3,7 @@
 namespace Markdom\ModelInterface\Content;
 
 use Markdom\ModelInterface\Block\ContentBlockInterface;
+use Markdom\ModelInterface\Common\NodeInterface;
 
 /**
  * Interface ContentInterface
@@ -11,7 +12,7 @@ use Markdom\ModelInterface\Block\ContentBlockInterface;
  *
  * @package Markdom\ModelInterface\Content
  */
-interface ContentInterface
+interface ContentInterface extends NodeInterface
 {
 
 	const TYPE_CODE = 'CODE';

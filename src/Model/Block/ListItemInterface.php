@@ -2,12 +2,14 @@
 
 namespace Markdom\ModelInterface\Block;
 
+use Markdom\ModelInterface\Common\NodeInterface;
+
 /**
  * Interface ListItemInterface
  *
  * @package Markdom\ModelInterface\Block
  */
-interface ListItemInterface extends BlockParentInterface
+interface ListItemInterface extends BlockParentInterface, NodeInterface
 {
 
 	/**

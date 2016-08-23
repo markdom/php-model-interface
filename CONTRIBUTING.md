@@ -1,4 +1,4 @@
-# Contributing to PHP Markdom
+# Contributing to PHP Markdom Model Interface
 
 ## About
 
@@ -79,50 +79,23 @@ Any bugfix that doesn’t include a test proving the existence of the bug being 
 
 We’ve found that test-first development really helps make features better architected and identifies potential edge cases earlier instead of later. Writing tests before the implementation is strongly encouraged.
 
-Sometimes testing is hard because it is not possible to create an environment on the developers machine to fulfill the softwares requirements in the middleware setup. For example installing imagick on Mac OS X could be a task straight out of hell. In this case it is useful to provide a out-of-the-box running machine setup like [docker](https://www.docker.com/) ot [vagrant](https://www.vagrantup.com/) and run tests on the virtual machine via the commandline interface.
-
-## Contributing requirements
-
-For development purposes there is a [vagrant](https://www.vagrantup.com/) setup included in the repo to fulfill the server side requirements easily. 
-
-### Installation and testing example (Mac OS X)
-
-#### Installation of vagrant
-
-Get your vagrant version from [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html) and run the installer. 
-
-#### Starting the virtual machine and connect via SSH
-
-```
-cd php-markdom
-vagrant up
-vagrant ssh
-```
-
-#### Running the tests via command line interface
-
-```
-cd /var/www/php-markdom
-phpunit --bootstrap vendor/autoload.php --configuration phpunit.xml.dist
-```
-
 ## Full example
 
-Here’s an example workflow for `php-markdom` hosted on GitLab, which is currently in version 1.0.2. Your username is `yourname` and you’re submitting a basic bugfix. 
+Here’s an example workflow for `php-model-interface` hosted on Github, which is currently in version 1.0.2. Your username is `yourname` and you’re submitting a basic bugfix. 
 
 ### Preparing your Fork
 
-- Hit ‘fork’ on GitLab, creating e.g. `yourname/php-markdom`
+- Hit ‘fork’ on Github, creating e.g. `yourname/php-model-interface`
 - Clone your project  
 
 ```
-git clone git@git.markenwerk.net:yourname/php-markdom.git
+git clone git@git.markenwerk.net:yourname/php-model-interface.git
 ```
 
 - Create a branch
 
 ```
-cd php-markdom
+cd php-model-interface
 git checkout -b fix-issue-269 1.0.0
 ```
 
@@ -137,7 +110,7 @@ git checkout -b fix-issue-269 1.0.0
 git commit -m "Changelog styled commit message crediting yourself"
 ```
 
-### Creating Merge Requests
+### Creating Pull Requests
 
 - Push your commit to get it back up to your fork
 
@@ -145,6 +118,6 @@ git commit -m "Changelog styled commit message crediting yourself"
 git push origin HEAD
 ```
 
-- Visit GitLab, click handy “Merge request” button that it will make upon noticing your new branch.
+- Visit Github, click handy “Pull request” button that it will make upon noticing your new branch.
 - In the description field, write down issue number (if submitting code fixing an existing issue) or describe the issue + your fix (if submitting a wholly new bugfix).
 - Hit ‘submit’! And please be patient - the maintainers will get to you when they can.

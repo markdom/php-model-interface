@@ -20,7 +20,7 @@ interface ContentParentInterface
 	public function getBlock();
 
 	/**
-	 * @return ContentCollection
+	 * @return ContentSequenceInterface
 	 */
 	public function getContents();
 

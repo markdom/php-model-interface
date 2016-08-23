@@ -2,6 +2,7 @@
 
 namespace Markdom\ModelInterface\Block;
 
+use Markdom\ModelInterface\Common\NodeInterface;
 use Markdom\ModelInterface\DocumentInterface;
 
 /**
@@ -11,7 +12,7 @@ use Markdom\ModelInterface\DocumentInterface;
  *
  * @package Markdom\ModelInterface\Block
  */
-interface BlockInterface
+interface BlockInterface extends NodeInterface
 {
 
 	const TYPE_CODE = 'CODE';

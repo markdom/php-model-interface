@@ -26,6 +26,5 @@ ratings:
   - "**.py"
   - "**.rb"
 exclude_paths:
-- example/
 - test/
 - vendor/
