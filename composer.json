@@ -1,0 +1,40 @@
+{
+  "name": "markenwerk/markdom",
+  "type": "library",
+  "description": "Interfaces, domain model, parser and handler for Markdom documents",
+  "keywords": [
+    "Markdom",
+    "Markdown",
+    "HTML",
+    "XHTML",
+    "JSON",
+    "XML"
+  ],
+  "homepage": "http://markenwerk.net/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martin Brecht-Precht",
+      "email": "mb@markenwerk.net",
+      "homepage": "http://markenwerk.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Markenwerk\\Markdom\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=5.4",
+    "league/commonmark": "^0.13",
+    "mustangostang/spyc": "~0.5",
+    "markenwerk/common-exceptions": "~3.0",
+    "markenwerk/stack-util": "~1.0",
+    "markenwerk/string-builder": "~1.0",
+    "markenwerk/json-pretty-printer": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=4.8.26",
+    "codeclimate/php-test-reporter": "dev-master"
+  }
+}
