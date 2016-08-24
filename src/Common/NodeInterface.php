@@ -35,4 +35,9 @@ interface NodeInterface
 	 */
 	public function getChildren();
 
+	/**
+	 * @return int
+	 */
+	public function countChildren();
+
 }
