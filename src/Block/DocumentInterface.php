@@ -2,7 +2,7 @@
 
 namespace Markdom\ModelInterface\Block;
 
-use Markdom\Handler\Markdom\MarkdomHandlerInterface;
+use Markdom\HandlerInterface\HandlerInterface;
 
 /**
  * Interface DocumentInterface
@@ -13,9 +13,9 @@ interface DocumentInterface extends BlockParentInterface
 {
 
 	/**
-	 * @param MarkdomHandlerInterface $markdomHandler
+	 * @param HandlerInterface $markdomHandler
 	 * @return void
 	 */
-	public function handle(MarkdomHandlerInterface $markdomHandler);
+	public function handle(HandlerInterface $markdomHandler);
 
 }

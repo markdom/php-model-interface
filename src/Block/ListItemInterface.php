@@ -2,7 +2,7 @@
 
 namespace Markdom\ModelInterface\Block;
 
-use Markdom\Handler\Markdom\MarkdomHandlerInterface;
+use Markdom\HandlerInterface\HandlerInterface;
 
 /**
  * Interface ListItemInterface
@@ -34,8 +34,8 @@ interface ListItemInterface extends BlockParentInterface
 	public function onDetach();
 
 	/**
-	 * @param MarkdomHandlerInterface $markdomHandler
+	 * @param HandlerInterface $markdomHandler
 	 */
-	public function onHandle(MarkdomHandlerInterface $markdomHandler);
+	public function onHandle(HandlerInterface $markdomHandler);
 
 }

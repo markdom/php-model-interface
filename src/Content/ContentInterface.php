@@ -2,7 +2,7 @@
 
 namespace Markdom\ModelInterface\Content;
 
-use Markdom\Handler\Markdom\MarkdomHandlerInterface;
+use Markdom\HandlerInterface\HandlerInterface;
 use Markdom\ModelInterface\Block\ContentParentBlockInterface;
 use Markdom\ModelInterface\Common\NodeInterface;
 
@@ -56,8 +56,8 @@ interface ContentInterface extends NodeInterface
 	public function onDetach();
 
 	/**
-	 * @param MarkdomHandlerInterface $markdomHandler
+	 * @param HandlerInterface $markdomHandler
 	 */
-	public function onHandle(MarkdomHandlerInterface $markdomHandler);
+	public function onHandle(HandlerInterface $markdomHandler);
 
 }

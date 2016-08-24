@@ -18,10 +18,11 @@
   ],
   "autoload": {
     "psr-4": {
-      "Markdom\\ModelInterface": "src"
+      "Markdom\\ModelInterface\\": "src"
     }
   },
   "require": {
-    "php": ">=5.3"
+    "php": ">=5.3",
+    "markdom/handler-interface": "*"
   }
 }
