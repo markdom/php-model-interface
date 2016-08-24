@@ -20,7 +20,7 @@ interface BlockParentInterface extends NodeInterface
 	public function getDocument();
 
 	/**
-	 * @return BlockListInterface
+	 * @return BlockSequenceInterface
 	 */
 	public function getBlocks();
 

@@ -5,11 +5,11 @@ namespace Markdom\ModelInterface\Content;
 use Markdom\ModelInterface\Common\CountableIteratorInterface;
 
 /**
- * Interface ContentListInterface
+ * Interface ContentSequenceInterface
  *
  * @package Markdom\ModelInterface\Content
  */
-interface ContentListInterface extends CountableIteratorInterface
+interface ContentSequenceInterface extends CountableIteratorInterface
 {
 
 	/**

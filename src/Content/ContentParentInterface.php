@@ -21,7 +21,7 @@ interface ContentParentInterface extends NodeInterface
 	public function getBlock();
 
 	/**
-	 * @return ContentListInterface
+	 * @return ContentSequenceInterface
 	 */
 	public function getContents();
 
