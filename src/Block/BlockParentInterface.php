@@ -2,7 +2,7 @@
 
 namespace Markdom\ModelInterface\Block;
 
-use Markdom\ModelInterface\DocumentInterface;
+use Markdom\ModelInterface\Common\NodeInterface;
 
 /**
  * Interface BlockParentInterface
@@ -11,7 +11,7 @@ use Markdom\ModelInterface\DocumentInterface;
  *
  * @package Markdom\ModelInterface\Block
  */
-interface BlockParentInterface
+interface BlockParentInterface extends NodeInterface
 {
 
 	/**
@@ -20,7 +20,7 @@ interface BlockParentInterface
 	public function getDocument();
 
 	/**
-	 * @return BlockSequenceInterface
+	 * @return BlockListInterface
 	 */
 	public function getBlocks();
 

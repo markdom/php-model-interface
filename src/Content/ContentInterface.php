@@ -2,7 +2,8 @@
 
 namespace Markdom\ModelInterface\Content;
 
-use Markdom\ModelInterface\Block\ContentBlockInterface;
+use Markdom\Handler\Markdom\MarkdomHandlerInterface;
+use Markdom\ModelInterface\Block\ContentParentBlockInterface;
 use Markdom\ModelInterface\Common\NodeInterface;
 
 /**
@@ -39,7 +40,7 @@ interface ContentInterface extends NodeInterface
 	public function getParent();
 
 	/**
-	 * @return ContentBlockInterface
+	 * @return ContentParentBlockInterface
 	 */
 	public function getBlock();
 

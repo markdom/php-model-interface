@@ -2,7 +2,8 @@
 
 namespace Markdom\ModelInterface\Content;
 
-use Markdom\ModelInterface\Block\ContentBlockInterface;
+use Markdom\ModelInterface\Block\ContentParentBlockInterface;
+use Markdom\ModelInterface\Common\NodeInterface;
 
 /**
  * Interface ContentParentInterface
@@ -11,16 +12,16 @@ use Markdom\ModelInterface\Block\ContentBlockInterface;
  *
  * @package Markdom\ModelInterface\Content
  */
-interface ContentParentInterface
+interface ContentParentInterface extends NodeInterface
 {
 
 	/**
-	 * @return ContentBlockInterface
+	 * @return ContentParentBlockInterface
 	 */
 	public function getBlock();
 
 	/**
-	 * @return ContentSequenceInterface
+	 * @return ContentListInterface
 	 */
 	public function getContents();
 

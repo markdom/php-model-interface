@@ -2,8 +2,8 @@
 
 namespace Markdom\ModelInterface\Block;
 
+use Markdom\Handler\Markdom\MarkdomHandlerInterface;
 use Markdom\ModelInterface\Common\NodeInterface;
-use Markdom\ModelInterface\DocumentInterface;
 
 /**
  * Interface BlockInterface

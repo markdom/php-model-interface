@@ -11,7 +11,7 @@ interface ListBlockInterface extends BlockInterface
 {
 
 	/**
-	 * @return ListItemSequenceInterface
+	 * @return ListItemListInterface
 	 */
 	public function getListItems();
 

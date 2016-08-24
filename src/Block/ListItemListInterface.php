@@ -5,11 +5,11 @@ namespace Markdom\ModelInterface\Block;
 use Markdom\ModelInterface\Common\CountableIteratorInterface;
 
 /**
- * Interface ListItemSequenceInterface
+ * Interface ListItemListInterface
  *
  * @package Markdom\ModelInterface\Block
  */
-interface ListItemSequenceInterface extends CountableIteratorInterface
+interface ListItemListInterface extends CountableIteratorInterface
 {
 
 	/**
@@ -28,11 +28,6 @@ interface ListItemSequenceInterface extends CountableIteratorInterface
 	 * @return int
 	 */
 	public function size();
-
-	/**
-	 * @return bool
-	 */
-	public function isEmpty();
 
 	/**
 	 * @param ListItemInterface $item

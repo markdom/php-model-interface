@@ -5,11 +5,11 @@ namespace Markdom\ModelInterface\Block;
 use Markdom\ModelInterface\Content\ContentParentInterface;
 
 /**
- * Interface ContentBlockInterface
+ * Interface ContentParentBlockInterface
  *
  * @package Markdom\ModelInterface\Block
  */
-interface ContentBlockInterface extends BlockInterface, ContentParentInterface
+interface ContentParentBlockInterface extends BlockInterface, ContentParentInterface
 {
 
 }
