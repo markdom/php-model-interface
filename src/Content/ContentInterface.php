@@ -2,6 +2,7 @@
 
 namespace Markdom\ModelInterface\Content;
 
+use Markdom\Common\ContentType;
 use Markdom\HandlerInterface\HandlerInterface;
 use Markdom\ModelInterface\Block\ContentParentBlockInterface;
 use Markdom\ModelInterface\Common\NodeInterface;
@@ -16,13 +17,13 @@ use Markdom\ModelInterface\Common\NodeInterface;
 interface ContentInterface extends NodeInterface
 {
 
-	const TYPE_CODE = 'CODE';
-	const TYPE_EMPHASIS = 'EMPHASIS';
-	const TYPE_IMAGE = 'IMAGE';
-	const TYPE_LINE_BREAK = 'LINE_BREAK';
-	const TYPE_LINK = 'LINK';
-	const TYPE_TEXT = 'TEXT';
-	const TYPE_HTML = 'HTML';
+	const TYPE_CODE = ContentType::TYPE_CODE;
+	const TYPE_EMPHASIS = ContentType::TYPE_EMPHASIS;
+	const TYPE_IMAGE = ContentType::TYPE_IMAGE;
+	const TYPE_LINE_BREAK = ContentType::TYPE_LINE_BREAK;
+	const TYPE_LINK = ContentType::TYPE_LINK;
+	const TYPE_TEXT = ContentType::TYPE_TEXT;
+	const TYPE_HTML = ContentType::TYPE_HTML;
 
 	/**
 	 * @return string

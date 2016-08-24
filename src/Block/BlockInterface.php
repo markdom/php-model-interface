@@ -2,6 +2,7 @@
 
 namespace Markdom\ModelInterface\Block;
 
+use Markdom\Common\BlockType;
 use Markdom\HandlerInterface\HandlerInterface;
 use Markdom\ModelInterface\Common\NodeInterface;
 
@@ -15,15 +16,15 @@ use Markdom\ModelInterface\Common\NodeInterface;
 interface BlockInterface extends NodeInterface
 {
 
-	const TYPE_CODE = 'CODE';
-	const TYPE_DIVISION = 'DIVISION';
-	const TYPE_HEADING = 'HEADING';
-	const TYPE_UNORDERED_LIST = 'UNORDERED_LIST';
-	const TYPE_ORDERED_LIST = 'ORDERED_LIST';
-	const TYPE_LIST_ITEM = 'LIST_ITEM';
-	const TYPE_PARAGRAPH = 'PARAGRAPH';
-	const TYPE_QUOTE = 'QUOTE';
-	const TYPE_HTML = 'HTML';
+	const TYPE_CODE = BlockType::TYPE_CODE;
+	const TYPE_DIVISION = BlockType::TYPE_DIVISION;
+	const TYPE_HEADING = BlockType::TYPE_HEADING;
+	const TYPE_UNORDERED_LIST = BlockType::TYPE_UNORDERED_LIST;
+	const TYPE_ORDERED_LIST = BlockType::TYPE_ORDERED_LIST;
+	const TYPE_LIST_ITEM = BlockType::TYPE_LIST_ITEM;
+	const TYPE_PARAGRAPH = BlockType::TYPE_PARAGRAPH;
+	const TYPE_QUOTE = BlockType::TYPE_QUOTE;
+	const TYPE_HTML = BlockType::TYPE_HTML;
 
 	/**
 	 * @return string
