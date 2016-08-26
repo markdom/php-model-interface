@@ -23,7 +23,6 @@ interface ContentInterface extends NodeInterface
 	const TYPE_LINE_BREAK = ContentType::TYPE_LINE_BREAK;
 	const TYPE_LINK = ContentType::TYPE_LINK;
 	const TYPE_TEXT = ContentType::TYPE_TEXT;
-	const TYPE_HTML = ContentType::TYPE_HTML;
 
 	/**
 	 * @return string
