@@ -28,4 +28,15 @@ interface LinkContentInterface extends ContentParentContentInterface
 	 */
 	public function setUri($uri);
 
+	/**
+	 * @return string
+	 */
+	public function getTitle();
+
+	/**
+	 * @param string $title
+	 * @return $this
+	 */
+	public function setTitle($title);
+
 }
