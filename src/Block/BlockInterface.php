@@ -17,6 +17,7 @@ interface BlockInterface extends NodeInterface
 {
 
 	const TYPE_CODE = BlockType::TYPE_CODE;
+	const TYPE_COMMENT = BlockType::TYPE_COMMENT;
 	const TYPE_DIVISION = BlockType::TYPE_DIVISION;
 	const TYPE_HEADING = BlockType::TYPE_HEADING;
 	const TYPE_UNORDERED_LIST = BlockType::TYPE_UNORDERED_LIST;
@@ -24,7 +25,6 @@ interface BlockInterface extends NodeInterface
 	const TYPE_LIST_ITEM = BlockType::TYPE_LIST_ITEM;
 	const TYPE_PARAGRAPH = BlockType::TYPE_PARAGRAPH;
 	const TYPE_QUOTE = BlockType::TYPE_QUOTE;
-	const TYPE_HTML = BlockType::TYPE_HTML;
 
 	/**
 	 * @return string
