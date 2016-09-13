@@ -2,6 +2,8 @@
 
 namespace Markdom\ModelInterface\Common;
 
+use Markdom\ModelInterface\Block\DocumentInterface;
+
 /**
  * Interface NodeInterface
  *
@@ -16,14 +18,29 @@ interface NodeInterface
 	const NODE_TYPE_LIST_ITEM = 'LIST_ITEM';
 
 	/**
+	 * @return int
+	 */
+	public function getIndex();
+
+	/**
 	 * @return string
 	 */
 	public function getNodeType();
 
 	/**
+	 * @return DocumentInterface
+	 */
+	public function getDocument();
+
+	/**
 	 * @return NodeInterface
 	 */
 	public function getParent();
+
+	/**
+	 * @return bool
+	 */
+	public function hasParent();
 
 	/**
 	 * @return bool

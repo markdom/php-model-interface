@@ -32,16 +32,6 @@ interface BlockInterface extends NodeInterface
 	public function getBlockType();
 
 	/**
-	 * @return int
-	 */
-	public function getIndex();
-
-	/**
-	 * @return DocumentInterface
-	 */
-	public function getDocument();
-
-	/**
 	 * @return BlockInterface
 	 */
 	public function getBlock();

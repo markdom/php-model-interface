@@ -13,19 +13,19 @@ interface LinebreakContentInterface extends ContentInterface
 	/**
 	 * LinebreakContent constructor.
 	 *
-	 * @param bool $hardbreak
+	 * @param bool $hard
 	 */
-	public function __construct($hardbreak);
+	public function __construct($hard);
 
 	/**
-	 * @return boolean
+	 * @return bool
 	 */
-	public function isHardbreak();
+	public function isHard();
 
 	/**
-	 * @param boolean $hardbreak
+	 * @param bool $hard
 	 * @return $this
 	 */
-	public function setHardbreak($hardbreak);
+	public function setHard($hard);
 
 }

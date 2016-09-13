@@ -31,4 +31,10 @@ interface ContentParentInterface extends NodeInterface
 	 */
 	public function addContent(ContentInterface $content);
 
+	/**
+	 * @param ContentInterface[] $contents
+	 * @return $this
+	 */
+	public function addContents(array $contents);
+
 }

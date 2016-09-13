@@ -13,11 +13,6 @@ interface ListItemInterface extends BlockParentInterface
 {
 
 	/**
-	 * @return int
-	 */
-	public function getIndex();
-
-	/**
 	 * @return ListBlockInterface
 	 */
 	public function getParent();

@@ -15,11 +15,6 @@ interface BlockParentInterface extends NodeInterface
 {
 
 	/**
-	 * @return DocumentInterface
-	 */
-	public function getDocument();
-
-	/**
 	 * @return BlockSequenceInterface
 	 */
 	public function getBlocks();
@@ -29,5 +24,11 @@ interface BlockParentInterface extends NodeInterface
 	 * @return $this
 	 */
 	public function addBlock(BlockInterface $block);
+
+	/**
+	 * @param BlockInterface[] $blocks
+	 * @return $this
+	 */
+	public function addBlocks(array $blocks);
 
 }

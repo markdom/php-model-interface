@@ -7,7 +7,7 @@ namespace Markdom\ModelInterface\Block;
  *
  * @package Markdom\ModelInterface\Block
  */
-interface QuoteBlockInterface extends BlockParentInterface
+interface QuoteBlockInterface extends BlockParentInterface, BlockInterface
 {
 
 }
