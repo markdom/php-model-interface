@@ -23,6 +23,6 @@
   },
   "require": {
     "php": ">=5.3",
-    "markdom/handler-interface": "^1.0.3"
+    "markdom/handler-interface": "^1.0.10"
   }
 }
