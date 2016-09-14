@@ -23,4 +23,16 @@ interface ListBlockInterface extends BlockInterface
 	 */
 	public function getListItems();
 
+	/**
+	 * @param ListItemInterface $listItem
+	 * @return $this
+	 */
+	public function addListItem(ListItemInterface $listItem);
+
+	/**
+	 * @param ListItemInterface[] $listItems
+	 * @return $this
+	 */
+	public function addListItems(array $listItems);
+
 }
