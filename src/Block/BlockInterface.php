@@ -32,11 +32,6 @@ interface BlockInterface extends NodeInterface
 	public function getBlockType();
 
 	/**
-	 * @return BlockInterface
-	 */
-	public function getBlock();
-
-	/**
 	 * @param BlockParentInterface $blockParent
 	 * @return $this
 	 */

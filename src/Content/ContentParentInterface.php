@@ -15,6 +15,11 @@ use Markdom\ModelInterface\Common\NodeInterface;
 interface ContentParentInterface extends NodeInterface
 {
 
+	const TYPE_EMPHASIS = 'EMPHASIS';
+	const TYPE_HEADING = 'HEADING';
+	const TYPE_LINK = 'LINK';
+	const TYPE_PARAGRAPH = 'PARAGRAPH';
+
 	/**
 	 * @return ContentParentBlockInterface
 	 */

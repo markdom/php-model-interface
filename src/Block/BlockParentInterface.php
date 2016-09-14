@@ -14,6 +14,20 @@ use Markdom\ModelInterface\Common\NodeInterface;
 interface BlockParentInterface extends NodeInterface
 {
 
+	const TYPE_DOCUMENT = 'DOCUMENT';
+	const TYPE_LIST_ITEM = 'LIST_ITEM';
+	const TYPE_QUOTE = 'QUOTE';
+
+	/**
+	 * @return string
+	 */
+	public function getContentParentType();
+
+	/**
+	 * @return string
+	 */
+	public function getBlockParentType();
+
 	/**
 	 * @return BlockSequenceInterface
 	 */
