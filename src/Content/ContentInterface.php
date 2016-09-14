@@ -17,12 +17,12 @@ use Markdom\ModelInterface\Common\NodeInterface;
 interface ContentInterface extends NodeInterface
 {
 
-	const TYPE_CODE = ContentType::TYPE_CODE;
-	const TYPE_EMPHASIS = ContentType::TYPE_EMPHASIS;
-	const TYPE_IMAGE = ContentType::TYPE_IMAGE;
-	const TYPE_LINE_BREAK = ContentType::TYPE_LINE_BREAK;
-	const TYPE_LINK = ContentType::TYPE_LINK;
-	const TYPE_TEXT = ContentType::TYPE_TEXT;
+	const CONTENT_TYPE_CODE = ContentType::TYPE_CODE;
+	const CONTENT_TYPE_EMPHASIS = ContentType::TYPE_EMPHASIS;
+	const CONTENT_TYPE_IMAGE = ContentType::TYPE_IMAGE;
+	const CONTENT_TYPE_LINE_BREAK = ContentType::TYPE_LINE_BREAK;
+	const CONTENT_TYPE_LINK = ContentType::TYPE_LINK;
+	const CONTENT_TYPE_TEXT = ContentType::TYPE_TEXT;
 
 	/**
 	 * @return string

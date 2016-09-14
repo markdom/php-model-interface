@@ -10,8 +10,8 @@ namespace Markdom\ModelInterface\Block;
 interface ListBlockInterface extends BlockInterface
 {
 
-	const TYPE_ORDERED_LIST = 'ORDERED_LIST';
-	const TYPE_UNORDERED_LIST = 'UNORDERED_LIST';
+	const LIST_BLOCK_TYPE_ORDERED_LIST = 'ORDERED_LIST';
+	const LIST_BLOCK_TYPE_UNORDERED_LIST = 'UNORDERED_LIST';
 
 	/**
 	 * @return string
