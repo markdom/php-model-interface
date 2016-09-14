@@ -21,11 +21,6 @@ interface BlockParentInterface extends NodeInterface
 	/**
 	 * @return string
 	 */
-	public function getContentParentType();
-
-	/**
-	 * @return string
-	 */
 	public function getBlockParentType();
 
 	/**

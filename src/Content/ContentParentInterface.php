@@ -21,6 +21,11 @@ interface ContentParentInterface extends NodeInterface
 	const CONTENT_PARENT_TYPE_PARAGRAPH = 'PARAGRAPH';
 
 	/**
+	 * @return string
+	 */
+	public function getContentParentType();
+
+	/**
 	 * @return BlockInterface
 	 */
 	public function getBlock();
