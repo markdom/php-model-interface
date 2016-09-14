@@ -2,7 +2,7 @@
 
 namespace Markdom\ModelInterface\Content;
 
-use Markdom\ModelInterface\Block\ContentParentBlockInterface;
+use Markdom\ModelInterface\Block\BlockInterface;
 use Markdom\ModelInterface\Common\NodeInterface;
 
 /**
@@ -21,7 +21,7 @@ interface ContentParentInterface extends NodeInterface
 	const TYPE_PARAGRAPH = 'PARAGRAPH';
 
 	/**
-	 * @return ContentParentBlockInterface
+	 * @return BlockInterface
 	 */
 	public function getBlock();
 
