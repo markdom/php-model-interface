@@ -21,18 +21,18 @@ interface ListBlockInterface extends BlockInterface
 	/**
 	 * @return ListItemSequenceInterface
 	 */
-	public function getListItems();
+	public function getItems();
 
 	/**
 	 * @param ListItemInterface $listItem
 	 * @return $this
 	 */
-	public function addListItem(ListItemInterface $listItem);
+	public function addItem(ListItemInterface $listItem);
 
 	/**
 	 * @param ListItemInterface[] $listItems
 	 * @return $this
 	 */
-	public function addListItems(array $listItems);
+	public function addItems(array $listItems);
 
 }
