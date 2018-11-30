@@ -10,25 +10,25 @@ namespace Markdom\ModelInterface\Content;
 interface EmphasisContentInterface extends ContentParentContentInterface
 {
 
-	const LEVEL_1 = 1;
-	const LEVEL_2 = 2;
+	public const LEVEL_1 = 1;
+	public const LEVEL_2 = 2;
 
 	/**
 	 * EmphasisContent constructor.
 	 *
 	 * @param int $level
 	 */
-	public function __construct($level);
+	public function __construct(int $level);
 
 	/**
 	 * @return int
 	 */
-	public function getLevel();
+	public function getLevel(): int;
 
 	/**
 	 * @param int $level
 	 * @return $this
 	 */
-	public function setLevel($level);
+	public function setLevel(int $level);
 
 }

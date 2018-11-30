@@ -17,39 +17,39 @@ interface ImageContentInterface extends ContentInterface
 	 * @param string $title
 	 * @param string $alternative
 	 */
-	public function __construct($uri, $title = null, $alternative = null);
+	public function __construct(string $uri, ?string $title = null, ?string $alternative = null);
 
 	/**
 	 * @return string
 	 */
-	public function getUri();
+	public function getUri(): string;
 
 	/**
 	 * @param string $uri
 	 * @return $this
 	 */
-	public function setUri($uri);
+	public function setUri(string $uri);
 
 	/**
 	 * @return string
 	 */
-	public function getTitle();
+	public function getTitle(): ?string;
 
 	/**
 	 * @param string $title
 	 * @return $this
 	 */
-	public function setTitle($title);
+	public function setTitle(string $title);
 
 	/**
 	 * @return string
 	 */
-	public function getAlternative();
+	public function getAlternative(): ?string;
 
 	/**
 	 * @param string $alternative
 	 * @return $this
 	 */
-	public function setAlternative($alternative);
+	public function setAlternative(string $alternative);
 
 }

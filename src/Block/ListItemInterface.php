@@ -15,7 +15,7 @@ interface ListItemInterface extends BlockParentInterface
 	/**
 	 * @return ListBlockInterface
 	 */
-	public function getParent();
+	public function getParent(): ListBlockInterface;
 
 	/**
 	 * @param ListBlockInterface $listBlock
@@ -30,7 +30,8 @@ interface ListItemInterface extends BlockParentInterface
 
 	/**
 	 * @param HandlerInterface $markdomHandler
+	 * @return void
 	 */
-	public function onHandle(HandlerInterface $markdomHandler);
+	public function onHandle(HandlerInterface $markdomHandler): void;
 
 }

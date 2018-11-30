@@ -14,29 +14,30 @@ interface LinkContentInterface extends ContentParentContentInterface
 	 * LinkContent constructor.
 	 *
 	 * @param string $uri
+	 * @param string $title
 	 */
-	public function __construct($uri);
+	public function __construct(string $uri, string $title);
 
 	/**
 	 * @return string
 	 */
-	public function getUri();
+	public function getUri(): string;
 
 	/**
 	 * @param string $uri
 	 * @return $this
 	 */
-	public function setUri($uri);
+	public function setUri(string $uri);
 
 	/**
 	 * @return string
 	 */
-	public function getTitle();
+	public function getTitle(): string;
 
 	/**
 	 * @param string $title
 	 * @return $this
 	 */
-	public function setTitle($title);
+	public function setTitle(string $title);
 
 }

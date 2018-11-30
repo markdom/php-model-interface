@@ -15,17 +15,17 @@ interface LinebreakContentInterface extends ContentInterface
 	 *
 	 * @param bool $hard
 	 */
-	public function __construct($hard);
+	public function __construct(bool $hard);
 
 	/**
 	 * @return bool
 	 */
-	public function isHard();
+	public function isHard(): bool;
 
 	/**
 	 * @param bool $hard
 	 * @return $this
 	 */
-	public function setHard($hard);
+	public function setHard(bool $hard);
 
 }

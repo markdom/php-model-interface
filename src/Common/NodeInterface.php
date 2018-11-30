@@ -12,49 +12,49 @@ use Markdom\ModelInterface\Block\DocumentInterface;
 interface NodeInterface
 {
 
-	const NODE_TYPE_DOCUMENT = 'DOCUMENT';
-	const NODE_TYPE_BLOCK = 'BLOCK';
-	const NODE_TYPE_CONTENT = 'CONTENT';
-	const NODE_TYPE_LIST_ITEM = 'LIST_ITEM';
+	public const NODE_TYPE_DOCUMENT = 'DOCUMENT';
+	public const NODE_TYPE_BLOCK = 'BLOCK';
+	public const NODE_TYPE_CONTENT = 'CONTENT';
+	public const NODE_TYPE_LIST_ITEM = 'LIST_ITEM';
 
 	/**
 	 * @return int
 	 */
-	public function getIndex();
+	public function getIndex(): int;
 
 	/**
 	 * @return string
 	 */
-	public function getNodeType();
+	public function getNodeType(): string;
 
 	/**
 	 * @return DocumentInterface
 	 */
-	public function getDocument();
+	public function getDocument(): DocumentInterface;
 
 	/**
-	 * @return NodeInterface
+	 * @return mixed
 	 */
 	public function getParent();
 
 	/**
 	 * @return bool
 	 */
-	public function hasParent();
+	public function hasParent(): bool;
 
 	/**
 	 * @return bool
 	 */
-	public function hasChildren();
+	public function hasChildren(): bool;
 
 	/**
 	 * @return CountableIteratorInterface
 	 */
-	public function getChildren();
+	public function getChildren(): CountableIteratorInterface;
 
 	/**
 	 * @return int
 	 */
-	public function countChildren();
+	public function countChildren(): int;
 
 }

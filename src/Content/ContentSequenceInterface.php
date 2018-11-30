@@ -22,58 +22,58 @@ interface ContentSequenceInterface extends CountableIteratorInterface
 	/**
 	 * @return ContentParentInterface
 	 */
-	public function getParent();
+	public function getParent(): ContentParentInterface;
 
 	/**
 	 * @return int
 	 */
-	public function size();
+	public function size(): int;
 
 	/**
 	 * @param ContentInterface $content
 	 * @return bool
 	 */
-	public function contains(ContentInterface $content);
+	public function contains(ContentInterface $content): bool;
 
 	/**
 	 * @param ContentInterface[] $contents
 	 * @return bool
 	 */
-	public function containsAll(array $contents);
+	public function containsAll(array $contents): bool;
 
 	/**
 	 * @return ContentInterface
 	 */
-	public function first();
+	public function first(): ContentInterface;
 
 	/**
 	 * @return ContentInterface
 	 */
-	public function last();
+	public function last(): ContentInterface;
 
 	/**
 	 * @param int $index
 	 * @return ContentInterface
 	 */
-	public function get($index);
+	public function get(int $index): ContentInterface;
 
 	/**
 	 * @param ContentInterface $content
 	 * @return int
 	 */
-	public function indexOf(ContentInterface $content);
+	public function indexOf(ContentInterface $content): int;
 
 	/**
 	 * @param ContentInterface $content
 	 * @return bool
 	 */
-	public function isFirst(ContentInterface $content);
+	public function isFirst(ContentInterface $content): bool;
 
 	/**
 	 * @param ContentInterface $content
 	 * @return bool
 	 */
-	public function isLast(ContentInterface $content);
+	public function isLast(ContentInterface $content): bool;
 
 	/**
 	 * @param ContentInterface $content
@@ -104,14 +104,14 @@ interface ContentSequenceInterface extends CountableIteratorInterface
 	 * @param int $index
 	 * @return $this
 	 */
-	public function insert(ContentInterface $content, $index);
+	public function insert(ContentInterface $content, int $index);
 
 	/**
 	 * @param ContentInterface[] $contents
 	 * @param int $index
 	 * @return $this
 	 */
-	public function insertAll(array $contents, $index);
+	public function insertAll(array $contents, int $index);
 
 	/**
 	 * @param ContentInterface $content
@@ -153,17 +153,17 @@ interface ContentSequenceInterface extends CountableIteratorInterface
 	 * @param int $index
 	 * @return $this
 	 */
-	public function replace(ContentInterface $content, $index);
+	public function replace(ContentInterface $content, int $index);
 
 	/**
 	 * @return ContentInterface
 	 */
-	public function removeFirst();
+	public function removeFirst(): ContentInterface;
 
 	/**
 	 * @return ContentInterface
 	 */
-	public function removeLast();
+	public function removeLast(): ContentInterface;
 
 	/**
 	 * @param ContentInterface[] $contents
@@ -175,13 +175,13 @@ interface ContentSequenceInterface extends CountableIteratorInterface
 	 * @param ContentInterface $content
 	 * @return ContentInterface
 	 */
-	public function removeItem(ContentInterface $content);
+	public function removeItem(ContentInterface $content): ContentInterface;
 
 	/**
 	 * @param int $index
 	 * @return ContentInterface
 	 */
-	public function remove($index);
+	public function remove(int $index): ContentInterface;
 
 	/**
 	 * @return $this

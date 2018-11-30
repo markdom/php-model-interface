@@ -22,58 +22,58 @@ interface BlockSequenceInterface extends CountableIteratorInterface
 	/**
 	 * @return BlockParentInterface
 	 */
-	public function getParent();
+	public function getParent(): BlockParentInterface;
 
 	/**
 	 * @return int
 	 */
-	public function size();
+	public function size(): int;
 
 	/**
 	 * @param BlockInterface $block
 	 * @return bool
 	 */
-	public function contains(BlockInterface $block);
+	public function contains(BlockInterface $block): bool;
 
 	/**
 	 * @param BlockInterface[] $blocks
 	 * @return bool
 	 */
-	public function containsAll(array $blocks);
+	public function containsAll(array $blocks): bool;
 
 	/**
 	 * @return BlockInterface
 	 */
-	public function first();
+	public function first(): BlockInterface;
 
 	/**
 	 * @return BlockInterface
 	 */
-	public function last();
+	public function last(): BlockInterface;
 
 	/**
 	 * @param int $index
 	 * @return BlockInterface
 	 */
-	public function get($index);
+	public function get(int $index): BlockInterface;
 
 	/**
 	 * @param BlockInterface $block
 	 * @return int
 	 */
-	public function indexOf(BlockInterface $block);
+	public function indexOf(BlockInterface $block): int;
 
 	/**
 	 * @param BlockInterface $block
 	 * @return bool
 	 */
-	public function isFirst(BlockInterface $block);
+	public function isFirst(BlockInterface $block): bool;
 
 	/**
 	 * @param BlockInterface $block
 	 * @return bool
 	 */
-	public function isLast(BlockInterface $block);
+	public function isLast(BlockInterface $block): bool;
 
 	/**
 	 * @param BlockInterface $block
@@ -104,14 +104,14 @@ interface BlockSequenceInterface extends CountableIteratorInterface
 	 * @param int $index
 	 * @return $this
 	 */
-	public function insert(BlockInterface $block, $index);
+	public function insert(BlockInterface $block, int $index);
 
 	/**
 	 * @param BlockInterface[] $blocks
 	 * @param int $index
 	 * @return $this
 	 */
-	public function insertAll(array $blocks, $index);
+	public function insertAll(array $blocks, int $index);
 
 	/**
 	 * @param BlockInterface $block
@@ -153,17 +153,17 @@ interface BlockSequenceInterface extends CountableIteratorInterface
 	 * @param int $index
 	 * @return $this
 	 */
-	public function replace(BlockInterface $block, $index);
+	public function replace(BlockInterface $block, int $index);
 
 	/**
 	 * @return BlockInterface
 	 */
-	public function removeFirst();
+	public function removeFirst(): BlockInterface;
 
 	/**
 	 * @return BlockInterface
 	 */
-	public function removeLast();
+	public function removeLast(): BlockInterface;
 
 	/**
 	 * @param BlockInterface[] $blocks
@@ -175,13 +175,13 @@ interface BlockSequenceInterface extends CountableIteratorInterface
 	 * @param BlockInterface $block
 	 * @return BlockInterface
 	 */
-	public function removeItem(BlockInterface $block);
+	public function removeItem(BlockInterface $block): BlockInterface;
 
 	/**
 	 * @param int $index
 	 * @return BlockInterface
 	 */
-	public function remove($index);
+	public function remove(int $index): BlockInterface;
 
 	/**
 	 * @return $this

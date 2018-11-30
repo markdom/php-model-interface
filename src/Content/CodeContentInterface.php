@@ -15,17 +15,17 @@ interface CodeContentInterface extends ContentInterface
 	 *
 	 * @param string $code
 	 */
-	public function __construct($code);
+	public function __construct(string $code);
 
 	/**
 	 * @return string
 	 */
-	public function getCode();
+	public function getCode(): string;
 
 	/**
 	 * @param string $code
 	 * @return $this
 	 */
-	public function setCode($code);
+	public function setCode(string $code);
 
 }

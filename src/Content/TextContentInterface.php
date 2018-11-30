@@ -15,17 +15,17 @@ interface TextContentInterface extends ContentInterface
 	 *
 	 * @param string $text
 	 */
-	public function __construct($text);
+	public function __construct(string $text);
 
 	/**
 	 * @return string
 	 */
-	public function getText();
+	public function getText(): string;
 
 	/**
 	 * @param string $text
 	 * @return $this
 	 */
-	public function setText($text);
+	public function setText(string $text);
 
 }

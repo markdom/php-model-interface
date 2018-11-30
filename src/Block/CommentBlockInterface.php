@@ -13,19 +13,19 @@ interface CommentBlockInterface extends BlockInterface
 	/**
 	 * CommentBlockInterface constructor.
 	 *
-	 * @param $comment
+	 * @param string $comment
 	 */
-	public function __construct($comment);
+	public function __construct(string $comment);
 
 	/**
 	 * @return string
 	 */
-	public function getComment();
+	public function getComment(): string;
 
 	/**
 	 * @param string $comment
 	 * @return $this
 	 */
-	public function setComment($comment);
+	public function setComment(string $comment);
 
 }

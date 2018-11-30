@@ -16,28 +16,28 @@ interface CodeBlockInterface extends BlockInterface
 	 * @param string $code
 	 * @param string $hint
 	 */
-	public function __construct($code, $hint = null);
+	public function __construct(string $code, ?string $hint = null);
 
 	/**
 	 * @return string
 	 */
-	public function getCode();
+	public function getCode(): string;
 
 	/**
 	 * @param string $code
 	 * @return $this
 	 */
-	public function setCode($code);
+	public function setCode(string $code);
 
 	/**
 	 * @return string
 	 */
-	public function getHint();
+	public function getHint(): ?string;
 
 	/**
 	 * @param string $hint
 	 * @return $this
 	 */
-	public function setHint($hint);
+	public function setHint(string $hint);
 
 }

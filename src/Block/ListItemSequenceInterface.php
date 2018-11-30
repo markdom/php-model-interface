@@ -22,58 +22,58 @@ interface ListItemSequenceInterface extends CountableIteratorInterface
 	/**
 	 * @return ListBlockInterface
 	 */
-	public function getParent();
+	public function getParent(): ListBlockInterface;
 
 	/**
 	 * @return int
 	 */
-	public function size();
+	public function size(): int;
 
 	/**
 	 * @param ListItemInterface $item
 	 * @return bool
 	 */
-	public function contains(ListItemInterface $item);
+	public function contains(ListItemInterface $item): bool;
 
 	/**
 	 * @param ListItemInterface[] $items
 	 * @return bool
 	 */
-	public function containsAll(array $items);
+	public function containsAll(array $items): bool;
 
 	/**
 	 * @return ListItemInterface
 	 */
-	public function first();
+	public function first(): ListItemInterface;
 
 	/**
 	 * @return ListItemInterface
 	 */
-	public function last();
+	public function last(): ListItemInterface;
 
 	/**
 	 * @param int $index
 	 * @return ListItemInterface
 	 */
-	public function get($index);
+	public function get(int $index): ListItemInterface;
 
 	/**
 	 * @param ListItemInterface $item
 	 * @return int
 	 */
-	public function indexOf(ListItemInterface $item);
+	public function indexOf(ListItemInterface $item): int;
 
 	/**
 	 * @param ListItemInterface $item
 	 * @return bool
 	 */
-	public function isFirst(ListItemInterface $item);
+	public function isFirst(ListItemInterface $item): bool;
 
 	/**
 	 * @param ListItemInterface $item
 	 * @return bool
 	 */
-	public function isLast(ListItemInterface $item);
+	public function isLast(ListItemInterface $item): bool;
 
 	/**
 	 * @param ListItemInterface $item
@@ -104,14 +104,14 @@ interface ListItemSequenceInterface extends CountableIteratorInterface
 	 * @param int $index
 	 * @return $this
 	 */
-	public function insert(ListItemInterface $item, $index);
+	public function insert(ListItemInterface $item, int $index);
 
 	/**
 	 * @param ListItemInterface[] $items
 	 * @param int $index
 	 * @return $this
 	 */
-	public function insertAll(array $items, $index);
+	public function insertAll(array $items, int $index);
 
 	/**
 	 * @param ListItemInterface $item
@@ -153,17 +153,17 @@ interface ListItemSequenceInterface extends CountableIteratorInterface
 	 * @param int $index
 	 * @return $this
 	 */
-	public function replace(ListItemInterface $item, $index);
+	public function replace(ListItemInterface $item, int $index);
 
 	/**
 	 * @return ListItemInterface
 	 */
-	public function removeFirst();
+	public function removeFirst(): ListItemInterface;
 
 	/**
 	 * @return ListItemInterface
 	 */
-	public function removeLast();
+	public function removeLast(): ListItemInterface;
 
 	/**
 	 * @param ListItemInterface[] $items
@@ -175,13 +175,13 @@ interface ListItemSequenceInterface extends CountableIteratorInterface
 	 * @param ListItemInterface $item
 	 * @return ListItemInterface
 	 */
-	public function removeItem(ListItemInterface $item);
+	public function removeItem(ListItemInterface $item): ListItemInterface;
 
 	/**
 	 * @param int $index
 	 * @return ListItemInterface
 	 */
-	public function remove($index);
+	public function remove(int $index): ListItemInterface;
 
 	/**
 	 * @return $this

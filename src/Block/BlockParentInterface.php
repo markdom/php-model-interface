@@ -17,7 +17,7 @@ interface BlockParentInterface extends NodeInterface
 	/**
 	 * @return BlockSequenceInterface
 	 */
-	public function getBlocks();
+	public function getBlocks(): BlockSequenceInterface;
 
 	/**
 	 * @param BlockInterface $block

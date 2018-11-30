@@ -18,12 +18,12 @@ interface ContentParentInterface extends NodeInterface
 	/**
 	 * @return ContentParentBlockInterface
 	 */
-	public function getBlock();
+	public function getBlock(): ContentParentBlockInterface;
 
 	/**
 	 * @return ContentSequenceInterface
 	 */
-	public function getContents();
+	public function getContents(): ContentSequenceInterface;
 
 	/**
 	 * @param ContentInterface $content

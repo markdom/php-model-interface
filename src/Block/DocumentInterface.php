@@ -16,6 +16,6 @@ interface DocumentInterface extends BlockParentInterface
 	 * @param HandlerInterface $markdomHandler
 	 * @return void
 	 */
-	public function handle(HandlerInterface $markdomHandler);
+	public function handle(HandlerInterface $markdomHandler): void;
 
 }

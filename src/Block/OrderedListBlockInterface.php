@@ -15,17 +15,17 @@ interface OrderedListBlockInterface extends ListBlockInterface
 	 *
 	 * @param int $startIndex
 	 */
-	public function __construct($startIndex);
+	public function __construct(int $startIndex);
 
 	/**
 	 * @return int
 	 */
-	public function getStartIndex();
+	public function getStartIndex(): int;
 
 	/**
 	 * @param int $startIndex
 	 * @return $this
 	 */
-	public function setStartIndex($startIndex);
+	public function setStartIndex(int $startIndex);
 
 }
