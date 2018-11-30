@@ -1,28 +1,28 @@
 {
-  "name": "markdom/model-interface",
-  "type": "library",
-  "description": "Markdom domain model interfaces written in PHP",
-  "keywords": [
-    "Markdom",
-    "Model",
-    "Interface"
-  ],
-  "homepage": "http://markenwerk.net/",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Martin Brecht-Precht",
-      "email": "mb@markenwerk.net",
-      "homepage": "http://markenwerk.net"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Markdom\\ModelInterface\\": "src"
-    }
-  },
-  "require": {
-    "php": ">=5.3",
-    "markdom/handler-interface": "^1.0.10"
-  }
+	"name": "markdom/model-interface",
+	"type": "library",
+	"description": "Markdom domain model interfaces written in PHP",
+	"keywords": [
+		"Markdom",
+		"Model",
+		"Interface"
+	],
+	"homepage": "http://markenwerk.net/",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Martin Brecht-Precht",
+			"email": "mb@markenwerk.net",
+			"homepage": "http://markenwerk.net"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Markdom\\ModelInterface\\": "src"
+		}
+	},
+	"require": {
+		"php": "^7.1",
+		"markdom/handler-interface": "^1.1.0"
+	}
 }

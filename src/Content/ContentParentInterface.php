@@ -15,20 +15,20 @@ use Markdom\ModelInterface\Common\NodeInterface;
 interface ContentParentInterface extends NodeInterface
 {
 
-	const CONTENT_PARENT_TYPE_EMPHASIS = 'EMPHASIS';
-	const CONTENT_PARENT_TYPE_HEADING = 'HEADING';
-	const CONTENT_PARENT_TYPE_LINK = 'LINK';
-	const CONTENT_PARENT_TYPE_PARAGRAPH = 'PARAGRAPH';
+	public const CONTENT_PARENT_TYPE_EMPHASIS = 'EMPHASIS';
+	public const CONTENT_PARENT_TYPE_HEADING = 'HEADING';
+	public const CONTENT_PARENT_TYPE_LINK = 'LINK';
+	public const CONTENT_PARENT_TYPE_PARAGRAPH = 'PARAGRAPH';
 
 	/**
 	 * @return string
 	 */
-	public function getContentParentType();
+	public function getContentParentType(): string;
 
 	/**
 	 * @return BlockInterface
 	 */
-	public function getBlock(): ContentParentBlockInterface;
+	public function getBlock(): BlockInterface;
 
 	/**
 	 * @return ContentSequenceInterface
