@@ -4,7 +4,7 @@ namespace Markdom\ModelInterface\Content;
 
 use Markdom\Common\ContentType;
 use Markdom\HandlerInterface\HandlerInterface;
-use Markdom\ModelInterface\Block\ContentParentBlockInterface;
+use Markdom\ModelInterface\Block\BlockInterface;
 use Markdom\ModelInterface\Common\NodeInterface;
 
 /**
@@ -17,27 +17,27 @@ use Markdom\ModelInterface\Common\NodeInterface;
 interface ContentInterface extends NodeInterface
 {
 
-	public const TYPE_CODE = ContentType::TYPE_CODE;
-	public const TYPE_EMPHASIS = ContentType::TYPE_EMPHASIS;
-	public const TYPE_IMAGE = ContentType::TYPE_IMAGE;
-	public const TYPE_LINE_BREAK = ContentType::TYPE_LINE_BREAK;
-	public const TYPE_LINK = ContentType::TYPE_LINK;
-	public const TYPE_TEXT = ContentType::TYPE_TEXT;
+	const CONTENT_TYPE_CODE = ContentType::TYPE_CODE;
+	const CONTENT_TYPE_EMPHASIS = ContentType::TYPE_EMPHASIS;
+	const CONTENT_TYPE_IMAGE = ContentType::TYPE_IMAGE;
+	const CONTENT_TYPE_LINE_BREAK = ContentType::TYPE_LINE_BREAK;
+	const CONTENT_TYPE_LINK = ContentType::TYPE_LINK;
+	const CONTENT_TYPE_TEXT = ContentType::TYPE_TEXT;
 
 	/**
 	 * @return string
 	 */
-	public function getContentType(): string;
+	public function getContentType();
 
 	/**
 	 * @return ContentParentInterface
 	 */
-	public function getParent(): ContentParentInterface;
+	public function getParent();
 
 	/**
-	 * @return ContentParentBlockInterface
+	 * @return BlockInterface
 	 */
-	public function getBlock(): ContentParentBlockInterface;
+	public function getBlock();
 
 	/**
 	 * @param ContentParentInterface $contentParent
@@ -52,8 +52,7 @@ interface ContentInterface extends NodeInterface
 
 	/**
 	 * @param HandlerInterface $markdomHandler
-	 * @return void
 	 */
-	public function onHandle(HandlerInterface $markdomHandler): void;
+	public function onHandle(HandlerInterface $markdomHandler);
 
 }

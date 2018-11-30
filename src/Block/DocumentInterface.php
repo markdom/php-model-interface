@@ -2,20 +2,14 @@
 
 namespace Markdom\ModelInterface\Block;
 
-use Markdom\HandlerInterface\HandlerInterface;
+use Markdom\DispatcherInterface\DispatcherInterface;
 
 /**
  * Interface DocumentInterface
  *
  * @package Markdom\ModelInterface\Block
  */
-interface DocumentInterface extends BlockParentInterface
+interface DocumentInterface extends BlockParentInterface, DispatcherInterface
 {
-
-	/**
-	 * @param HandlerInterface $markdomHandler
-	 * @return void
-	 */
-	public function handle(HandlerInterface $markdomHandler): void;
 
 }
