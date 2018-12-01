@@ -13,9 +13,10 @@ interface ListItemInterface extends BlockParentInterface
 {
 
 	/**
+	 * @noinspection ReturnTypeCanBeDeclaredInspection
 	 * @return ListBlockInterface
 	 */
-	public function getParent(): ListBlockInterface;
+	public function getParent();
 
 	/**
 	 * @param ListBlockInterface $listBlock

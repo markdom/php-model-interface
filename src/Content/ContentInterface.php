@@ -30,9 +30,10 @@ interface ContentInterface extends NodeInterface
 	public function getContentType(): string;
 
 	/**
+	 * @noinspection ReturnTypeCanBeDeclaredInspection
 	 * @return ContentParentInterface
 	 */
-	public function getParent(): ContentParentInterface;
+	public function getParent();
 
 	/**
 	 * @return BlockInterface

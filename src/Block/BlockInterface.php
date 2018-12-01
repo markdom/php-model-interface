@@ -43,9 +43,10 @@ interface BlockInterface extends NodeInterface
 	public function onDetach();
 
 	/**
+	 * @noinspection ReturnTypeCanBeDeclaredInspection
 	 * @return BlockParentInterface
 	 */
-	public function getParent(): BlockParentInterface;
+	public function getParent();
 
 	/**
 	 * @param HandlerInterface $markdomHandler
