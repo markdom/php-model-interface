@@ -33,7 +33,8 @@ interface NodeInterface
 	public function getDocument(): DocumentInterface;
 
 	/**
-	 * @return mixed
+	 * @noinspection ReturnTypeCanBeDeclaredInspection
+	 * @return NodeInterface|null
 	 */
 	public function getParent();
 
@@ -48,9 +49,10 @@ interface NodeInterface
 	public function hasChildren(): bool;
 
 	/**
-	 * @return CountableIteratorInterface
+	 * @noinspection ReturnTypeCanBeDeclaredInspection
+	 * @return CountableIteratorInterface|null
 	 */
-	public function getChildren(): CountableIteratorInterface;
+	public function getChildren();
 
 	/**
 	 * @return int
