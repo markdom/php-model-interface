@@ -53,6 +53,6 @@ interface ContentInterface extends NodeInterface
 	/**
 	 * @param HandlerInterface $markdomHandler
 	 */
-	public function onHandle(HandlerInterface $markdomHandler);
+	public function onHandle(HandlerInterface $markdomHandler): void;
 
 }

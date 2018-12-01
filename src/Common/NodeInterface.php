@@ -20,7 +20,7 @@ interface NodeInterface
 	/**
 	 * @return int
 	 */
-	public function getIndex(): int;
+	public function getIndex(): ?int;
 
 	/**
 	 * @return string
