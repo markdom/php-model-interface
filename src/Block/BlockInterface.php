@@ -16,20 +16,20 @@ use Markdom\ModelInterface\Common\NodeInterface;
 interface BlockInterface extends NodeInterface
 {
 
-	const BLOCK_TYPE_CODE = BlockType::TYPE_CODE;
-	const BLOCK_TYPE_COMMENT = BlockType::TYPE_COMMENT;
-	const BLOCK_TYPE_DIVISION = BlockType::TYPE_DIVISION;
-	const BLOCK_TYPE_HEADING = BlockType::TYPE_HEADING;
-	const BLOCK_TYPE_UNORDERED_LIST = BlockType::TYPE_UNORDERED_LIST;
-	const BLOCK_TYPE_ORDERED_LIST = BlockType::TYPE_ORDERED_LIST;
-	const BLOCK_TYPE_LIST_ITEM = BlockType::TYPE_LIST_ITEM;
-	const BLOCK_TYPE_PARAGRAPH = BlockType::TYPE_PARAGRAPH;
-	const BLOCK_TYPE_QUOTE = BlockType::TYPE_QUOTE;
+	public const BLOCK_TYPE_CODE = BlockType::TYPE_CODE;
+	public const BLOCK_TYPE_COMMENT = BlockType::TYPE_COMMENT;
+	public const BLOCK_TYPE_DIVISION = BlockType::TYPE_DIVISION;
+	public const BLOCK_TYPE_HEADING = BlockType::TYPE_HEADING;
+	public const BLOCK_TYPE_UNORDERED_LIST = BlockType::TYPE_UNORDERED_LIST;
+	public const BLOCK_TYPE_ORDERED_LIST = BlockType::TYPE_ORDERED_LIST;
+	public const BLOCK_TYPE_LIST_ITEM = BlockType::TYPE_LIST_ITEM;
+	public const BLOCK_TYPE_PARAGRAPH = BlockType::TYPE_PARAGRAPH;
+	public const BLOCK_TYPE_QUOTE = BlockType::TYPE_QUOTE;
 
 	/**
 	 * @return string
 	 */
-	public function getBlockType();
+	public function getBlockType(): string;
 
 	/**
 	 * @param BlockParentInterface $blockParent
@@ -45,12 +45,12 @@ interface BlockInterface extends NodeInterface
 	/**
 	 * @return BlockParentInterface
 	 */
-	public function getParent();
+	public function getParent(): BlockParentInterface;
 
 	/**
 	 * @param HandlerInterface $markdomHandler
 	 * @return void
 	 */
-	public function onHandle(HandlerInterface $markdomHandler);
+	public function onHandle(HandlerInterface $markdomHandler): void;
 
 }

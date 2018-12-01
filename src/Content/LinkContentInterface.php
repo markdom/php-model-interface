@@ -16,7 +16,7 @@ interface LinkContentInterface extends ContentParentContentInterface
 	 * @param string $uri
 	 * @param string $title
 	 */
-	public function __construct(string $uri, string $title);
+	public function __construct(string $uri, ?string $title = null);
 
 	/**
 	 * @return string
@@ -32,7 +32,7 @@ interface LinkContentInterface extends ContentParentContentInterface
 	/**
 	 * @return string
 	 */
-	public function getTitle(): string;
+	public function getTitle(): ?string;
 
 	/**
 	 * @param string $title

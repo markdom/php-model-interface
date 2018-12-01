@@ -10,18 +10,18 @@ namespace Markdom\ModelInterface\Block;
 interface ListBlockInterface extends BlockInterface
 {
 
-	const LIST_BLOCK_TYPE_ORDERED_LIST = 'ORDERED_LIST';
-	const LIST_BLOCK_TYPE_UNORDERED_LIST = 'UNORDERED_LIST';
+	public const LIST_BLOCK_TYPE_ORDERED_LIST = 'ORDERED_LIST';
+	public const LIST_BLOCK_TYPE_UNORDERED_LIST = 'UNORDERED_LIST';
 
 	/**
 	 * @return string
 	 */
-	public function getListBlockType();
+	public function getListBlockType(): string;
 
 	/**
 	 * @return ListItemSequenceInterface
 	 */
-	public function getItems();
+	public function getItems(): ListItemSequenceInterface;
 
 	/**
 	 * @param ListItemInterface $listItem

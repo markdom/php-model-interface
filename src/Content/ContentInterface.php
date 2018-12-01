@@ -17,27 +17,27 @@ use Markdom\ModelInterface\Common\NodeInterface;
 interface ContentInterface extends NodeInterface
 {
 
-	const CONTENT_TYPE_CODE = ContentType::TYPE_CODE;
-	const CONTENT_TYPE_EMPHASIS = ContentType::TYPE_EMPHASIS;
-	const CONTENT_TYPE_IMAGE = ContentType::TYPE_IMAGE;
-	const CONTENT_TYPE_LINE_BREAK = ContentType::TYPE_LINE_BREAK;
-	const CONTENT_TYPE_LINK = ContentType::TYPE_LINK;
-	const CONTENT_TYPE_TEXT = ContentType::TYPE_TEXT;
+	public const CONTENT_TYPE_CODE = ContentType::TYPE_CODE;
+	public const CONTENT_TYPE_EMPHASIS = ContentType::TYPE_EMPHASIS;
+	public const CONTENT_TYPE_IMAGE = ContentType::TYPE_IMAGE;
+	public const CONTENT_TYPE_LINE_BREAK = ContentType::TYPE_LINE_BREAK;
+	public const CONTENT_TYPE_LINK = ContentType::TYPE_LINK;
+	public const CONTENT_TYPE_TEXT = ContentType::TYPE_TEXT;
 
 	/**
 	 * @return string
 	 */
-	public function getContentType();
+	public function getContentType(): string;
 
 	/**
 	 * @return ContentParentInterface
 	 */
-	public function getParent();
+	public function getParent(): ContentParentInterface;
 
 	/**
 	 * @return BlockInterface
 	 */
-	public function getBlock();
+	public function getBlock(): BlockInterface;
 
 	/**
 	 * @param ContentParentInterface $contentParent
