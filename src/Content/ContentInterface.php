@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Markdom\ModelInterface\Content;
 
 use Markdom\Common\ContentType;
